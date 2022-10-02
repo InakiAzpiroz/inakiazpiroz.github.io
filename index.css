@@ -1,55 +1,81 @@
+/*>>>>>>>>>> CONFIGURACIONS GENERAL <<<<<<<<<<*/
 html{
-  font-family: helvetica;
+  font-family: verdana;
   background-color: white;
 }
 body, html{
     padding:0;
     margin:0;
 }
+.body-contacte{
+  background-color: rgba(47,95,35, 0.3);
+}
 
+p{
+  font-family: georgia;
+  max-width: 600px;
+  font-size: 18px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.text-normal{
+  font-family:courier;
+}
+
+/*Barra de navegació*/
 .upper-bar{
   position: fix;
   width: 100%;
   height: 60px;
   background-color: rgb(47,95,35);
-  margin-bottom: 10px;
-
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.40) 0px 8px 20px;
+  box-shadow: rgba(0, 0, 0, 0.40) 0px 4px 10px;
 }
-
 #nav-bar{
   padding-right: 20px;
 }
-
 #nav-bar-title{
   margin-left: 20px;
   text-decoration: none;
   font-weight: 600;
 }
-
-#nav-bar-title:hover{
+/*#nav-bar-title:hover{
   color: rgb(150,150,150);
-}
-
+}*/
 .si-a-sobre{
   color: rgb(47,95,35);
   background-color: white;
 }
-
+.si-a-sobre:hover{
+  color: rgb(150,150,150);
+}
 .no-a-sobre{
   color: white;
 }
+.no-a-sobre:hover{
+  color: rgb(200, 200, 200);
+}
 
+/*>>>>>>>>>> CONFIGURACIONS PER SECCIONS INDEX <<<<<<<<<<*/
 .middle-section{
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.text-section{
+  padding: 40px;
+  max-width: 500px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .first-block{
@@ -64,6 +90,91 @@ body, html{
   margin-bottom: 50px;
 }
 
+/*Titulars principals de la pàgina web*/
+.bloc-titular{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+#titular-pagina{
+  margin: 80px 30px 50px 30px;
+  font-size: 90px;
+}
+#subtitol-pagina{
+  text-align: center;
+  margin: 0px 30px 60px 30px;
+}
+
+/*Blocs de text*/
+.bloc-text-especial{
+  width: 100%;
+  height: auto;
+  background-color: rgba(47,95,35, 0.3);
+  padding: 10px 0;
+  border-bottom: solid rgb(47,95,35) 2px;
+  border-top: solid rgb(47,95,35) 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloc-text-normal{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Concrets de la pàgina "Contacte"*/
+.text-negrita{
+  font-weight: 900;
+}
+.sense-marge{
+  margin-bottom: -10px;
+}
+.text-internal-link{
+  text-decoration: none;
+  color: black;
+}
+.text-internal-link:hover{
+  color: rgb(100, 100, 100);
+}
+
+/*Footer*/
+footer{
+  width: 100%;
+  height: 40px;
+  background-color: rgb(47,95,35);
+  margin-top: 60px;
+  box-shadow: rgba(0, 0, 0, 0.40) 0px -4px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.text-footer{
+  margin: 0px 40px;
+  width: 800px;
+  font-size: 11px;
+  font-weight: lighter;
+  color: white;
+}
+#footer-link{
+  text-decoration: none;
+  color: white;
+}
+#footer-link:hover{
+  color: rgb(200,200,200);
+}
+
+
+
+
+
+/*>>>>>>>>>> PER CONFIGURAR I ORDENAR <<<<<<<<<<*/
 h1{
   margin-top: 50px;
   margin-bottom: 50px;
@@ -75,9 +186,11 @@ h1{
   box-shadow: rgba(0, 0, 0, 0.40) 0px 5px 15px;
 }
 
+
+/*Barres separadores*/
 .barra{
   width: 100%;
-  height: 30px;
+  height: 10px;
 }
 .bBlanca{
   background-color: white;
