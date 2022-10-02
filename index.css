@@ -1,8 +1,52 @@
-html {
+html{
   font-family: helvetica;
-  background-color: rgba(47,95,35, 0.75);
+  background-color: white;
 }
-body{
+body, html{
+    padding:0;
+    margin:0;
+}
+
+.upper-bar{
+  position: fix;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(47,95,35);
+  margin-bottom: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.40) 0px 8px 20px;
+}
+
+#nav-bar{
+  padding-right: 20px;
+}
+
+#nav-bar-title{
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#nav-bar-title:hover{
+  color: rgb(150,150,150);
+}
+
+.si-a-sobre{
+  color: rgb(47,95,35);
+  background-color: white;
+  font-size: 18px;
+}
+
+.no-a-sobre{
+  color: white;
+}
+
+.middle-section{
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,5 +84,9 @@ h1{
   background-color: white;
 }
 .bVerda{
-  background-color: rgb(47,95,35)
+  background-color: rgb(47,95,35);
+}
+
+.bVermella{
+  background-color: red;
 }
