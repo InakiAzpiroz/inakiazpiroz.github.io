@@ -102,7 +102,7 @@ p{
 }
 #subtitol-pagina{
   text-align: center;
-  margin: 0px 30px 60px 30px;
+  margin: 0px 30px 20px 30px;
 }
 
 /*Blocs de text*/
@@ -172,8 +172,6 @@ footer{
 
 
 
-
-
 /*>>>>>>>>>> PER CONFIGURAR I ORDENAR <<<<<<<<<<*/
 h1{
   margin-top: 50px;
@@ -201,4 +199,13 @@ h1{
 
 .bVermella{
   background-color: red;
+}
+
+img{
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 50px;
 }
