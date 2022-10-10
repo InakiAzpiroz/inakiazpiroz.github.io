@@ -1,0 +1,3238 @@
+<html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taula dades UE Sants</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <link rel="stylesheet" href="prova_taulaDeDades.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+<body>
+<table id="example" class="table table-striped" style="width:100%">
+   <thead>
+     <tr>
+         <th>Índex</th>
+         <th>Data</th>
+         <th>Categoria</th>
+         <th>Rival</th>
+         <th>Gols marcats</th>
+         <th>Gols rebuts</th>
+         <th>Camp</th>
+     <tr>
+   </thead>
+   <tbody>
+     <tr>
+         <td>1</td>
+         <td>2000-09-10</td>
+         <td>Regional Preferent</td>
+         <td>Cerdanyola del Vallès</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>2</td>
+         <td>2000-09-17</td>
+         <td>Regional Preferent</td>
+         <td>Torre Llobeta</td>
+         <td>4</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>3</td>
+         <td>2000-09-24</td>
+         <td>Regional Preferent</td>
+         <td>Sant Cugat</td>
+         <td>4</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>4</td>
+         <td>2000-10-01</td>
+         <td>Regional Preferent</td>
+         <td>San Cristóbal</td>
+         <td>1</td>
+         <td>3</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>5</td>
+         <td>2000-10-08</td>
+         <td>Regional Preferent</td>
+         <td>Marca de l'Ham</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>6</td>
+         <td>2000-10-15</td>
+         <td>Regional Preferent</td>
+         <td>Lloret</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>7</td>
+         <td>2000-10-22</td>
+         <td>Regional Preferent</td>
+         <td>Poble Sec</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>8</td>
+         <td>2000-10-29</td>
+         <td>Regional Preferent</td>
+         <td>Sant Quirze</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>9</td>
+         <td>2000-11-05</td>
+         <td>Regional Preferent</td>
+         <td>Cassá</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>10</td>
+         <td>2000-11-12</td>
+         <td>Regional Preferent</td>
+         <td>Pals</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>11</td>
+         <td>2000-11-19</td>
+         <td>Regional Preferent</td>
+         <td>San Julián</td>
+         <td>3</td>
+         <td>5</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>12</td>
+         <td>2000-11-26</td>
+         <td>Regional Preferent</td>
+         <td>Pomar</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>13</td>
+         <td>2000-12-03</td>
+         <td>Regional Preferent</td>
+         <td>Berga</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>14</td>
+         <td>2000-12-10</td>
+         <td>Regional Preferent</td>
+         <td>Fundació Figueres</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>15</td>
+         <td>2000-12-17</td>
+         <td>Regional Preferent</td>
+         <td>Barceloneta</td>
+         <td>4</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>16</td>
+         <td>2001-01-07</td>
+         <td>Regional Preferent</td>
+         <td>Montañesa</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>17</td>
+         <td>2001-01-14</td>
+         <td>Regional Preferent</td>
+         <td>Alzamora</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>18</td>
+         <td>2001-01-21</td>
+         <td>Regional Preferent</td>
+         <td>Cerdanyola del Vallès</td>
+         <td>6</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>19</td>
+         <td>2001-01-28</td>
+         <td>Regional Preferent</td>
+         <td>Torre Llobeta</td>
+         <td>0</td>
+         <td>4</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>20</td>
+         <td>2001-02-04</td>
+         <td>Regional Preferent</td>
+         <td>Sant Cugat</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>21</td>
+         <td>2001-02-11</td>
+         <td>Regional Preferent</td>
+         <td>San Cristóbal</td>
+         <td>0</td>
+         <td>3</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>22</td>
+         <td>2001-02-18</td>
+         <td>Regional Preferent</td>
+         <td>Marca de l'Ham</td>
+         <td>4</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>23</td>
+         <td>2001-03-04</td>
+         <td>Regional Preferent</td>
+         <td>Lloret</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>24</td>
+         <td>2001-03-11</td>
+         <td>Regional Preferent</td>
+         <td>Poble Sec</td>
+         <td>3</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>25</td>
+         <td>2001-03-18</td>
+         <td>Regional Preferent</td>
+         <td>Sant Quirze</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>26</td>
+         <td>2001-03-25</td>
+         <td>Regional Preferent</td>
+         <td>Cassá</td>
+         <td>4</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>27</td>
+         <td>2001-04-01</td>
+         <td>Regional Preferent</td>
+         <td>Pals</td>
+         <td>1</td>
+         <td>5</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>28</td>
+         <td>2001-04-08</td>
+         <td>Regional Preferent</td>
+         <td>San Julián</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>29</td>
+         <td>2001-04-22</td>
+         <td>Regional Preferent</td>
+         <td>Pomar</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>30</td>
+         <td>2001-04-29</td>
+         <td>Regional Preferent</td>
+         <td>Berga</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>31</td>
+         <td>2001-05-06</td>
+         <td>Regional Preferent</td>
+         <td>Fundació Figueres</td>
+         <td>4</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>32</td>
+         <td>2001-05-13</td>
+         <td>Regional Preferent</td>
+         <td>Barceloneta</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>33</td>
+         <td>2001-05-20</td>
+         <td>Regional Preferent</td>
+         <td>Montañesa</td>
+         <td>5</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>34</td>
+         <td>2001-05-27</td>
+         <td>Regional Preferent</td>
+         <td>Alzamora</td>
+         <td>2</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>35</td>
+         <td>2001-09-09</td>
+         <td>Primera Catalana</td>
+         <td>El Morell</td>
+         <td>2</td>
+         <td>3</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>36</td>
+         <td>2001-09-16</td>
+         <td>Primera Catalana</td>
+         <td>Vilanova</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>37</td>
+         <td>2001-09-23</td>
+         <td>Primera Catalana</td>
+         <td>Peralada</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>38</td>
+         <td>2001-09-30</td>
+         <td>Primera Catalana</td>
+         <td>Prat</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>39</td>
+         <td>2001-10-07</td>
+         <td>Primera Catalana</td>
+         <td>Cerdanyola Mataró</td>
+         <td>2</td>
+         <td>4</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>40</td>
+         <td>2001-10-14</td>
+         <td>Primera Catalana</td>
+         <td>Valls</td>
+         <td>4</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>41</td>
+         <td>2001-10-21</td>
+         <td>Primera Catalana</td>
+         <td>Masnou</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>42</td>
+         <td>2001-10-28</td>
+         <td>Primera Catalana</td>
+         <td>Pomar</td>
+         <td>3</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>43</td>
+         <td>2001-11-01</td>
+         <td>Primera Catalana</td>
+         <td>Banyoles</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>44</td>
+         <td>2001-11-04</td>
+         <td>Primera Catalana</td>
+         <td>Ripollet</td>
+         <td>4</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>45</td>
+         <td>2001-11-11</td>
+         <td>Primera Catalana</td>
+         <td>Vilafranca</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>46</td>
+         <td>2001-11-18</td>
+         <td>Primera Catalana</td>
+         <td>Tortosa</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>47</td>
+         <td>2001-11-25</td>
+         <td>Primera Catalana</td>
+         <td>Castelldefels</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>48</td>
+         <td>2001-12-02</td>
+         <td>Primera Catalana</td>
+         <td>Martinenc</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>49</td>
+         <td>2001-12-06</td>
+         <td>Primera Catalana</td>
+         <td>Santboià</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>50</td>
+         <td>2001-12-09</td>
+         <td>Primera Catalana</td>
+         <td>Rubí</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>51</td>
+         <td>2001-12-16</td>
+         <td>Primera Catalana</td>
+         <td>Vic</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>52</td>
+         <td>2001-12-23</td>
+         <td>Primera Catalana</td>
+         <td>Granollers</td>
+         <td>2</td>
+         <td>3</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>53</td>
+         <td>2002-01-13</td>
+         <td>Primera Catalana</td>
+         <td>Horta</td>
+         <td>4</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>54</td>
+         <td>2002-01-20</td>
+         <td>Primera Catalana</td>
+         <td>El Morell</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>55</td>
+         <td>2002-01-27</td>
+         <td>Primera Catalana</td>
+         <td>Vilanova</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>56</td>
+         <td>2002-02-03</td>
+         <td>Primera Catalana</td>
+         <td>Peralada</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>57</td>
+         <td>2002-02-10</td>
+         <td>Primera Catalana</td>
+         <td>Prat</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>58</td>
+         <td>2002-02-17</td>
+         <td>Primera Catalana</td>
+         <td>Cerdanyola Mataró</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>59</td>
+         <td>2002-02-24</td>
+         <td>Primera Catalana</td>
+         <td>Valls</td>
+         <td>4</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>60</td>
+         <td>2002-03-03</td>
+         <td>Primera Catalana</td>
+         <td>Masnou</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>61</td>
+         <td>2002-03-10</td>
+         <td>Primera Catalana</td>
+         <td>Pomar</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>62</td>
+         <td>2002-03-17</td>
+         <td>Primera Catalana</td>
+         <td>Banyoles</td>
+         <td>3</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>63</td>
+         <td>2002-03-24</td>
+         <td>Primera Catalana</td>
+         <td>Ripollet</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>64</td>
+         <td>2002-04-07</td>
+         <td>Primera Catalana</td>
+         <td>Vilafranca</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>65</td>
+         <td>2002-04-14</td>
+         <td>Primera Catalana</td>
+         <td>Tortosa</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>66</td>
+         <td>2002-04-21</td>
+         <td>Primera Catalana</td>
+         <td>Castelldefels</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>67</td>
+         <td>2002-04-28</td>
+         <td>Primera Catalana</td>
+         <td>Martinenc</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>68</td>
+         <td>2002-05-01</td>
+         <td>Primera Catalana</td>
+         <td>Santboià</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>69</td>
+         <td>2002-05-05</td>
+         <td>Primera Catalana</td>
+         <td>Rubí</td>
+         <td>4</td>
+         <td>3</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>70</td>
+         <td>2002-05-12</td>
+         <td>Primera Catalana</td>
+         <td>Vic</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>71</td>
+         <td>2002-05-19</td>
+         <td>Primera Catalana</td>
+         <td>Granollers</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>72</td>
+         <td>2002-05-26</td>
+         <td>Primera Catalana</td>
+         <td>Horta</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>73</td>
+         <td>2002-09-08</td>
+         <td>Primera Catalana</td>
+         <td>Cornellà</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>74</td>
+         <td>2002-09-15</td>
+         <td>Primera Catalana</td>
+         <td>Ripollet</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>75</td>
+         <td>2002-09-22</td>
+         <td>Primera Catalana</td>
+         <td>Hospitalet Atlètic</td>
+         <td>3</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>76</td>
+         <td>2002-09-29</td>
+         <td>Primera Catalana</td>
+         <td>Vilafranca</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>77</td>
+         <td>2002-10-06</td>
+         <td>Primera Catalana</td>
+         <td>Andorra</td>
+         <td>1</td>
+         <td>3</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>78</td>
+         <td>2002-10-13</td>
+         <td>Primera Catalana</td>
+         <td>Horta</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>79</td>
+         <td>2002-10-20</td>
+         <td>Primera Catalana</td>
+         <td>Cerdanyola Mataró</td>
+         <td>1</td>
+         <td>3</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>80</td>
+         <td>2002-10-27</td>
+         <td>Primera Catalana</td>
+         <td>Poble Sec</td>
+         <td>2</td>
+         <td>3</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>81</td>
+         <td>2002-11-03</td>
+         <td>Primera Catalana</td>
+         <td>Santboià</td>
+         <td>3</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>82</td>
+         <td>2002-11-10</td>
+         <td>Primera Catalana</td>
+         <td>Banyoles</td>
+         <td>0</td>
+         <td>3</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>83</td>
+         <td>2002-11-17</td>
+         <td>Primera Catalana</td>
+         <td>Pomar</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>84</td>
+         <td>2002-11-24</td>
+         <td>Primera Catalana</td>
+         <td>Santa Eulàlia</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>85</td>
+         <td>2002-12-01</td>
+         <td>Primera Catalana</td>
+         <td>El Morell</td>
+         <td>2</td>
+         <td>6</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>86</td>
+         <td>2002-12-08</td>
+         <td>Primera Catalana</td>
+         <td>Vic</td>
+         <td>2</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>87</td>
+         <td>2002-12-15</td>
+         <td>Primera Catalana</td>
+         <td>Júpiter</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>88</td>
+         <td>2002-12-22</td>
+         <td>Primera Catalana</td>
+         <td>Figueres</td>
+         <td>3</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>89</td>
+         <td>2002-12-29</td>
+         <td>Primera Catalana</td>
+         <td>Badalona B</td>
+         <td>3</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>90</td>
+         <td>2003-01-05</td>
+         <td>Primera Catalana</td>
+         <td>Masnou</td>
+         <td>1</td>
+         <td>4</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>91</td>
+         <td>2003-01-12</td>
+         <td>Primera Catalana</td>
+         <td>Martinenc</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>92</td>
+         <td>2003-01-19</td>
+         <td>Primera Catalana</td>
+         <td>Cornellà</td>
+         <td>0</td>
+         <td>3</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>93</td>
+         <td>2003-01-26</td>
+         <td>Primera Catalana</td>
+         <td>Ripollet</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>94</td>
+         <td>2003-02-02</td>
+         <td>Primera Catalana</td>
+         <td>Hospitalet Atlètic</td>
+         <td>2</td>
+         <td>5</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>95</td>
+         <td>2003-02-09</td>
+         <td>Primera Catalana</td>
+         <td>Vilafranca</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>96</td>
+         <td>2003-02-16</td>
+         <td>Primera Catalana</td>
+         <td>Andorra</td>
+         <td>4</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>97</td>
+         <td>2003-02-23</td>
+         <td>Primera Catalana</td>
+         <td>Horta</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>98</td>
+         <td>2003-03-02</td>
+         <td>Primera Catalana</td>
+         <td>Cerdanyola Mataró</td>
+         <td>4</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>99</td>
+         <td>2003-03-09</td>
+         <td>Primera Catalana</td>
+         <td>Poble Sec</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>100</td>
+         <td>2003-03-16</td>
+         <td>Primera Catalana</td>
+         <td>Santboià</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>101</td>
+         <td>2003-03-23</td>
+         <td>Primera Catalana</td>
+         <td>Banyoles</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>102</td>
+         <td>2003-03-30</td>
+         <td>Primera Catalana</td>
+         <td>Pomar</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>103</td>
+         <td>2003-04-06</td>
+         <td>Primera Catalana</td>
+         <td>Santa Eulàlia</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>104</td>
+         <td>2003-04-20</td>
+         <td>Primera Catalana</td>
+         <td>El Morell</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>105</td>
+         <td>2003-04-27</td>
+         <td>Primera Catalana</td>
+         <td>Vic</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>106</td>
+         <td>2003-05-01</td>
+         <td>Primera Catalana</td>
+         <td>Júpiter</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>107</td>
+         <td>2003-05-04</td>
+         <td>Primera Catalana</td>
+         <td>Figueres</td>
+         <td>2</td>
+         <td>4</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>108</td>
+         <td>2003-05-11</td>
+         <td>Primera Catalana</td>
+         <td>Badalona B</td>
+         <td>2</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>109</td>
+         <td>2003-05-18</td>
+         <td>Primera Catalana</td>
+         <td>Masnou</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>110</td>
+         <td>2003-05-25</td>
+         <td>Primera Catalana</td>
+         <td>Martinenc</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>111</td>
+         <td>2003-09-07</td>
+         <td>Primera Catalana</td>
+         <td>Balaguer</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>112</td>
+         <td>2003-09-11</td>
+         <td>Primera Catalana</td>
+         <td>Pubilla Casas</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>113</td>
+         <td>2003-09-14</td>
+         <td>Primera Catalana</td>
+         <td>Pomar</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>114</td>
+         <td>2003-09-21</td>
+         <td>Primera Catalana</td>
+         <td>Pobla de Mafumet</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>115</td>
+         <td>2003-09-28</td>
+         <td>Primera Catalana</td>
+         <td>Premià</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>116</td>
+         <td>2003-10-05</td>
+         <td>Primera Catalana</td>
+         <td>Horta</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>117</td>
+         <td>2003-10-12</td>
+         <td>Primera Catalana</td>
+         <td>Tortosa</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>118</td>
+         <td>2003-10-19</td>
+         <td>Primera Catalana</td>
+         <td>Santboià</td>
+         <td>0</td>
+         <td>3</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>119</td>
+         <td>2003-10-26</td>
+         <td>Primera Catalana</td>
+         <td>Ripollet</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>120</td>
+         <td>2003-11-02</td>
+         <td>Primera Catalana</td>
+         <td>Hospitalet Atlètic</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>121</td>
+         <td>2003-11-09</td>
+         <td>Primera Catalana</td>
+         <td>El Morell</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>122</td>
+         <td>2003-11-16</td>
+         <td>Primera Catalana</td>
+         <td>Santa Eulàlia</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>123</td>
+         <td>2003-11-23</td>
+         <td>Primera Catalana</td>
+         <td>Badalona B</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>124</td>
+         <td>2003-11-30</td>
+         <td>Primera Catalana</td>
+         <td>Rubí</td>
+         <td>1</td>
+         <td>6</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>125</td>
+         <td>2003-12-07</td>
+         <td>Primera Catalana</td>
+         <td>Poble Sec</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>126</td>
+         <td>2003-12-14</td>
+         <td>Primera Catalana</td>
+         <td>Masnou</td>
+         <td>1</td>
+         <td>3</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>127</td>
+         <td>2003-12-21</td>
+         <td>Primera Catalana</td>
+         <td>Júpiter</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>128</td>
+         <td>2004-01-04</td>
+         <td>Primera Catalana</td>
+         <td>Guíxols</td>
+         <td>1</td>
+         <td>4</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>129</td>
+         <td>2004-01-11</td>
+         <td>Primera Catalana</td>
+         <td>Prat</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>130</td>
+         <td>2004-01-18</td>
+         <td>Primera Catalana</td>
+         <td>Balaguer</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>131</td>
+         <td>2004-01-25</td>
+         <td>Primera Catalana</td>
+         <td>Pubilla Casas</td>
+         <td>3</td>
+         <td>3</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>132</td>
+         <td>2004-02-01</td>
+         <td>Primera Catalana</td>
+         <td>Pomar</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>133</td>
+         <td>2004-02-08</td>
+         <td>Primera Catalana</td>
+         <td>Pobla de Mafumet</td>
+         <td>2</td>
+         <td>4</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>134</td>
+         <td>2004-02-15</td>
+         <td>Primera Catalana</td>
+         <td>Premià</td>
+         <td>0</td>
+         <td>4</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>135</td>
+         <td>2004-02-22</td>
+         <td>Primera Catalana</td>
+         <td>Horta</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>136</td>
+         <td>2004-02-29</td>
+         <td>Primera Catalana</td>
+         <td>Tortosa</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>137</td>
+         <td>2004-03-07</td>
+         <td>Primera Catalana</td>
+         <td>Santboià</td>
+         <td>0</td>
+         <td>4</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>138</td>
+         <td>2004-03-14</td>
+         <td>Primera Catalana</td>
+         <td>Ripollet</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>139</td>
+         <td>2004-03-21</td>
+         <td>Primera Catalana</td>
+         <td>Hospitalet Atlètic</td>
+         <td>2</td>
+         <td>4</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>140</td>
+         <td>2004-03-28</td>
+         <td>Primera Catalana</td>
+         <td>El Morell</td>
+         <td>0</td>
+         <td>4</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>141</td>
+         <td>2004-04-04</td>
+         <td>Primera Catalana</td>
+         <td>Santa Eulàlia</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>142</td>
+         <td>2004-04-18</td>
+         <td>Primera Catalana</td>
+         <td>Badalona B</td>
+         <td>0</td>
+         <td>3</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>143</td>
+         <td>2004-04-25</td>
+         <td>Primera Catalana</td>
+         <td>Rubí</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>144</td>
+         <td>2004-05-02</td>
+         <td>Primera Catalana</td>
+         <td>Poble Sec</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>145</td>
+         <td>2004-05-09</td>
+         <td>Primera Catalana</td>
+         <td>Masnou</td>
+         <td>0</td>
+         <td>4</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>146</td>
+         <td>2004-05-16</td>
+         <td>Primera Catalana</td>
+         <td>Júpiter</td>
+         <td>0</td>
+         <td>6</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>147</td>
+         <td>2004-05-23</td>
+         <td>Primera Catalana</td>
+         <td>Guíxols</td>
+         <td>2</td>
+         <td>6</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>148</td>
+         <td>2004-05-30</td>
+         <td>Primera Catalana</td>
+         <td>Prat</td>
+         <td>0</td>
+         <td>3</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>149</td>
+         <td>2004-09-12</td>
+         <td>Regional Preferent</td>
+         <td>Roda de Barà</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>150</td>
+         <td>2004-09-19</td>
+         <td>Regional Preferent</td>
+         <td>Tortosa</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>151</td>
+         <td>2004-09-26</td>
+         <td>Regional Preferent</td>
+         <td>Mollerussa</td>
+         <td>1</td>
+         <td>4</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>152</td>
+         <td>2004-10-03</td>
+         <td>Regional Preferent</td>
+         <td>Penya Barcelonista</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>153</td>
+         <td>2004-10-10</td>
+         <td>Regional Preferent</td>
+         <td>Alcarràs</td>
+         <td>3</td>
+         <td>4</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>154</td>
+         <td>2004-10-17</td>
+         <td>Regional Preferent</td>
+         <td>Benavent</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>155</td>
+         <td>2004-10-24</td>
+         <td>Regional Preferent</td>
+         <td>Caprabo</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>156</td>
+         <td>2004-10-31</td>
+         <td>Regional Preferent</td>
+         <td>Amposta</td>
+         <td>0</td>
+         <td>4</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>157</td>
+         <td>2004-11-07</td>
+         <td>Regional Preferent</td>
+         <td>Vilaseca</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>158</td>
+         <td>2004-11-14</td>
+         <td>Regional Preferent</td>
+         <td>Cambrils</td>
+         <td>0</td>
+         <td>3</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>159</td>
+         <td>2004-11-21</td>
+         <td>Regional Preferent</td>
+         <td>Viladecans</td>
+         <td>4</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>160</td>
+         <td>2004-11-28</td>
+         <td>Regional Preferent</td>
+         <td>Roquetenc</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>161</td>
+         <td>2004-12-12</td>
+         <td>Regional Preferent</td>
+         <td>Vilafranca</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>162</td>
+         <td>2004-12-19</td>
+         <td>Regional Preferent</td>
+         <td>Polvoritense La Marina</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>163</td>
+         <td>2005-01-09</td>
+         <td>Regional Preferent</td>
+         <td>Santa Eulàlia</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>164</td>
+         <td>2005-01-16</td>
+         <td>Regional Preferent</td>
+         <td>La Florida</td>
+         <td>3</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>165</td>
+         <td>2005-01-23</td>
+         <td>Regional Preferent</td>
+         <td>Igualada</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>166</td>
+         <td>2005-01-30</td>
+         <td>Regional Preferent</td>
+         <td>Roda de Barà</td>
+         <td>2</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>167</td>
+         <td>2005-02-06</td>
+         <td>Regional Preferent</td>
+         <td>Tortosa</td>
+         <td>0</td>
+         <td>3</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>168</td>
+         <td>2005-02-13</td>
+         <td>Regional Preferent</td>
+         <td>Mollerussa</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>169</td>
+         <td>2005-02-20</td>
+         <td>Regional Preferent</td>
+         <td>Penya Barcelonista</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>170</td>
+         <td>2005-02-27</td>
+         <td>Regional Preferent</td>
+         <td>Alcarràs</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>171</td>
+         <td>2005-03-06</td>
+         <td>Regional Preferent</td>
+         <td>Benavent</td>
+         <td>4</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>172</td>
+         <td>2005-03-13</td>
+         <td>Regional Preferent</td>
+         <td>Caprabo</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>173</td>
+         <td>2005-03-20</td>
+         <td>Regional Preferent</td>
+         <td>Amposta</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>174</td>
+         <td>2005-04-03</td>
+         <td>Regional Preferent</td>
+         <td>Vilaseca</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>175</td>
+         <td>2005-04-10</td>
+         <td>Regional Preferent</td>
+         <td>Cambrils</td>
+         <td>4</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>176</td>
+         <td>2005-04-17</td>
+         <td>Regional Preferent</td>
+         <td>Viladecans</td>
+         <td>2</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>177</td>
+         <td>2005-04-24</td>
+         <td>Regional Preferent</td>
+         <td>Roquetenc</td>
+         <td>5</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>178</td>
+         <td>2005-05-01</td>
+         <td>Regional Preferent</td>
+         <td>Vilafranca</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>179</td>
+         <td>2005-05-08</td>
+         <td>Regional Preferent</td>
+         <td>Polvoritense La Marina</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>180</td>
+         <td>2005-05-15</td>
+         <td>Regional Preferent</td>
+         <td>Santa Eulàlia</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>181</td>
+         <td>2005-05-22</td>
+         <td>Regional Preferent</td>
+         <td>La Florida</td>
+         <td>3</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>182</td>
+         <td>2005-05-29</td>
+         <td>Regional Preferent</td>
+         <td>Igualada</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>183</td>
+         <td>2005-09-18</td>
+         <td>Regional Preferent</td>
+         <td>Taradell</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>184</td>
+         <td>2005-09-25</td>
+         <td>Regional Preferent</td>
+         <td>Cerdanyola Mataró</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>185</td>
+         <td>2005-10-02</td>
+         <td>Regional Preferent</td>
+         <td>Mollet</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>186</td>
+         <td>2005-10-09</td>
+         <td>Regional Preferent</td>
+         <td>Ripoll</td>
+         <td>3</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>187</td>
+         <td>2005-10-16</td>
+         <td>Regional Preferent</td>
+         <td>Sant Cugat</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>188</td>
+         <td>2005-10-23</td>
+         <td>Regional Preferent</td>
+         <td>Roses</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>189</td>
+         <td>2005-10-30</td>
+         <td>Regional Preferent</td>
+         <td>Canovelles</td>
+         <td>2</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>190</td>
+         <td>2005-11-06</td>
+         <td>Regional Preferent</td>
+         <td>Farners</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>191</td>
+         <td>2005-11-13</td>
+         <td>Regional Preferent</td>
+         <td>Vilassar de Dalt</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>192</td>
+         <td>2005-11-20</td>
+         <td>Regional Preferent</td>
+         <td>Tossa</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>193</td>
+         <td>2005-11-27</td>
+         <td>Regional Preferent</td>
+         <td>Caprabo</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>194</td>
+         <td>2005-12-04</td>
+         <td>Regional Preferent</td>
+         <td>Pomar</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>195</td>
+         <td>2005-12-11</td>
+         <td>Regional Preferent</td>
+         <td>San Cristóbal</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>196</td>
+         <td>2005-12-18</td>
+         <td>Regional Preferent</td>
+         <td>Vic</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>197</td>
+         <td>2006-01-08</td>
+         <td>Regional Preferent</td>
+         <td>L'Escala</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>198</td>
+         <td>2006-01-15</td>
+         <td>Regional Preferent</td>
+         <td>Bellavista</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>199</td>
+         <td>2006-01-22</td>
+         <td>Regional Preferent</td>
+         <td>Montcada</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>200</td>
+         <td>2006-01-29</td>
+         <td>Regional Preferent</td>
+         <td>Taradell</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>201</td>
+         <td>2006-02-05</td>
+         <td>Regional Preferent</td>
+         <td>Cerdanyola Mataró</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>202</td>
+         <td>2006-02-12</td>
+         <td>Regional Preferent</td>
+         <td>Mollet</td>
+         <td>0</td>
+         <td>4</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>203</td>
+         <td>2006-02-19</td>
+         <td>Regional Preferent</td>
+         <td>Ripoll</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>204</td>
+         <td>2006-02-26</td>
+         <td>Regional Preferent</td>
+         <td>Sant Cugat</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>205</td>
+         <td>2006-03-05</td>
+         <td>Regional Preferent</td>
+         <td>Roses</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>206</td>
+         <td>2006-03-12</td>
+         <td>Regional Preferent</td>
+         <td>Canovelles</td>
+         <td>4</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>207</td>
+         <td>2006-03-19</td>
+         <td>Regional Preferent</td>
+         <td>Farners</td>
+         <td>5</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>208</td>
+         <td>2006-03-26</td>
+         <td>Regional Preferent</td>
+         <td>Vilassar de Dalt</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>209</td>
+         <td>2006-04-02</td>
+         <td>Regional Preferent</td>
+         <td>Tossa</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>210</td>
+         <td>2006-04-09</td>
+         <td>Regional Preferent</td>
+         <td>Caprabo</td>
+         <td>0</td>
+         <td>4</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>211</td>
+         <td>2006-04-23</td>
+         <td>Regional Preferent</td>
+         <td>Pomar</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>212</td>
+         <td>2006-04-30</td>
+         <td>Regional Preferent</td>
+         <td>San Cristóbal</td>
+         <td>0</td>
+         <td>4</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>213</td>
+         <td>2006-05-07</td>
+         <td>Regional Preferent</td>
+         <td>Vic</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>214</td>
+         <td>2006-05-14</td>
+         <td>Regional Preferent</td>
+         <td>L'Escala</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>215</td>
+         <td>2006-05-21</td>
+         <td>Regional Preferent</td>
+         <td>Bellavista</td>
+         <td>3</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>216</td>
+         <td>2006-05-28</td>
+         <td>Regional Preferent</td>
+         <td>Montcada</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>217</td>
+         <td>2006-09-17</td>
+         <td>Regional Preferent</td>
+         <td>Sitges</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>218</td>
+         <td>2006-09-24</td>
+         <td>Regional Preferent</td>
+         <td>Horta</td>
+         <td>3</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>219</td>
+         <td>2006-10-01</td>
+         <td>Regional Preferent</td>
+         <td>Marianao Poblet</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>220</td>
+         <td>2006-10-08</td>
+         <td>Regional Preferent</td>
+         <td>Vista Alegre</td>
+         <td>2</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>221</td>
+         <td>2006-10-15</td>
+         <td>Regional Preferent</td>
+         <td>Santfeliuenc</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>222</td>
+         <td>2006-10-22</td>
+         <td>Regional Preferent</td>
+         <td>Iberiana</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>223</td>
+         <td>2006-10-29</td>
+         <td>Regional Preferent</td>
+         <td>Pubilla Casas</td>
+         <td>4</td>
+         <td>3</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>224</td>
+         <td>2006-11-05</td>
+         <td>Regional Preferent</td>
+         <td>Can Fatjó</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>225</td>
+         <td>2006-11-12</td>
+         <td>Regional Preferent</td>
+         <td>Guissona</td>
+         <td>4</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>226</td>
+         <td>2006-11-19</td>
+         <td>Regional Preferent</td>
+         <td>Vilaseca</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>227</td>
+         <td>2006-11-26</td>
+         <td>Regional Preferent</td>
+         <td>Júpiter</td>
+         <td>3</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>228</td>
+         <td>2006-12-03</td>
+         <td>Regional Preferent</td>
+         <td>Benavent</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>229</td>
+         <td>2006-12-10</td>
+         <td>Regional Preferent</td>
+         <td>Cambrils</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>230</td>
+         <td>2006-12-17</td>
+         <td>Regional Preferent</td>
+         <td>Jesús Catalonia</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>231</td>
+         <td>2007-01-07</td>
+         <td>Regional Preferent</td>
+         <td>Polvoritense La Marina</td>
+         <td>3</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>232</td>
+         <td>2007-01-14</td>
+         <td>Regional Preferent</td>
+         <td>Roda de Berà</td>
+         <td>0</td>
+         <td>3</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>233</td>
+         <td>2007-01-21</td>
+         <td>Regional Preferent</td>
+         <td>Viladecans</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>234</td>
+         <td>2007-01-28</td>
+         <td>Regional Preferent</td>
+         <td>Sitges</td>
+         <td>0</td>
+         <td>3</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>235</td>
+         <td>2007-02-04</td>
+         <td>Regional Preferent</td>
+         <td>Horta</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>236</td>
+         <td>2007-02-11</td>
+         <td>Regional Preferent</td>
+         <td>Marianao Poblet</td>
+         <td>2</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>237</td>
+         <td>2007-02-18</td>
+         <td>Regional Preferent</td>
+         <td>Vista Alegre</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>238</td>
+         <td>2007-02-25</td>
+         <td>Regional Preferent</td>
+         <td>Santfeliuenc</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>239</td>
+         <td>2007-03-04</td>
+         <td>Regional Preferent</td>
+         <td>Iberiana</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>240</td>
+         <td>2007-03-11</td>
+         <td>Regional Preferent</td>
+         <td>Pubilla Casas</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>241</td>
+         <td>2007-03-18</td>
+         <td>Regional Preferent</td>
+         <td>Can Fatjó</td>
+         <td>3</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>242</td>
+         <td>2007-03-25</td>
+         <td>Regional Preferent</td>
+         <td>Guissona</td>
+         <td>6</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>243</td>
+         <td>2007-04-01</td>
+         <td>Regional Preferent</td>
+         <td>Vilaseca</td>
+         <td>2</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>244</td>
+         <td>2007-04-15</td>
+         <td>Regional Preferent</td>
+         <td>Júpiter</td>
+         <td>2</td>
+         <td>4</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>245</td>
+         <td>2007-04-22</td>
+         <td>Regional Preferent</td>
+         <td>Benavent</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>246</td>
+         <td>2007-04-29</td>
+         <td>Regional Preferent</td>
+         <td>Cambrils</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>247</td>
+         <td>2007-05-06</td>
+         <td>Regional Preferent</td>
+         <td>Jesús Catalonia</td>
+         <td>2</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>248</td>
+         <td>2007-05-13</td>
+         <td>Regional Preferent</td>
+         <td>Polvoritense La Marina</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>249</td>
+         <td>2007-05-20</td>
+         <td>Regional Preferent</td>
+         <td>Roda de Berà</td>
+         <td>3</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>250</td>
+         <td>2007-05-27</td>
+         <td>Regional Preferent</td>
+         <td>Viladecans</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>251</td>
+         <td>2007-09-16</td>
+         <td>Regional Preferent</td>
+         <td>Martorell</td>
+         <td>2</td>
+         <td>3</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>252</td>
+         <td>2007-09-23</td>
+         <td>Regional Preferent</td>
+         <td>Roquetenc</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>253</td>
+         <td>2007-09-30</td>
+         <td>Regional Preferent</td>
+         <td>Horta</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>254</td>
+         <td>2007-10-07</td>
+         <td>Regional Preferent</td>
+         <td>Mariano Poblet</td>
+         <td>2</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>255</td>
+         <td>2007-10-14</td>
+         <td>Regional Preferent</td>
+         <td>Júpiter</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>256</td>
+         <td>2007-10-21</td>
+         <td>Regional Preferent</td>
+         <td>Viladecans</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>257</td>
+         <td>2007-10-28</td>
+         <td>Regional Preferent</td>
+         <td>Alcarràs</td>
+         <td>2</td>
+         <td>6</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>258</td>
+         <td>2007-11-04</td>
+         <td>Regional Preferent</td>
+         <td>Can Fatjó</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>259</td>
+         <td>2007-11-11</td>
+         <td>Regional Preferent</td>
+         <td>El Catllar</td>
+         <td>0</td>
+         <td>3</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>260</td>
+         <td>2007-11-18</td>
+         <td>Regional Preferent</td>
+         <td>Cambrils</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>261</td>
+         <td>2007-11-25</td>
+         <td>Regional Preferent</td>
+         <td>Santfeliuenc</td>
+         <td>3</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>262</td>
+         <td>2007-12-02</td>
+         <td>Regional Preferent</td>
+         <td>Iberiana</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>263</td>
+         <td>2007-12-09</td>
+         <td>Regional Preferent</td>
+         <td>Sitges</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>264</td>
+         <td>2007-12-16</td>
+         <td>Regional Preferent</td>
+         <td>Vista Alegre</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>265</td>
+         <td>2007-12-23</td>
+         <td>Regional Preferent</td>
+         <td>Mollerussa</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>266</td>
+         <td>2008-01-13</td>
+         <td>Regional Preferent</td>
+         <td>Josep María Gené</td>
+         <td>4</td>
+         <td>3</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>267</td>
+         <td>2008-01-20</td>
+         <td>Regional Preferent</td>
+         <td>Pubilla Casas</td>
+         <td>2</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>268</td>
+         <td>2008-01-27</td>
+         <td>Regional Preferent</td>
+         <td>Martorell</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>269</td>
+         <td>2008-02-03</td>
+         <td>Regional Preferent</td>
+         <td>Roquetenc</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>270</td>
+         <td>2008-02-10</td>
+         <td>Regional Preferent</td>
+         <td>Horta</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>271</td>
+         <td>2008-02-17</td>
+         <td>Regional Preferent</td>
+         <td>Mariano Poblet</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>272</td>
+         <td>2008-02-24</td>
+         <td>Regional Preferent</td>
+         <td>Júpiter</td>
+         <td>2</td>
+         <td>4</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>273</td>
+         <td>2008-03-02</td>
+         <td>Regional Preferent</td>
+         <td>Viladecans</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>274</td>
+         <td>2008-03-09</td>
+         <td>Regional Preferent</td>
+         <td>Alcarràs</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>275</td>
+         <td>2008-03-16</td>
+         <td>Regional Preferent</td>
+         <td>Can Fatjó</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>276</td>
+         <td>2008-03-30</td>
+         <td>Regional Preferent</td>
+         <td>El Catllar</td>
+         <td>4</td>
+         <td>4</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>277</td>
+         <td>2008-04-06</td>
+         <td>Regional Preferent</td>
+         <td>Cambrils</td>
+         <td>2</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>278</td>
+         <td>2008-04-13</td>
+         <td>Regional Preferent</td>
+         <td>Santfeliuenc</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>279</td>
+         <td>2008-04-20</td>
+         <td>Regional Preferent</td>
+         <td>Iberiana</td>
+         <td>2</td>
+         <td>5</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>280</td>
+         <td>2008-04-27</td>
+         <td>Regional Preferent</td>
+         <td>Sitges</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>281</td>
+         <td>2008-05-04</td>
+         <td>Regional Preferent</td>
+         <td>Vista Alegre</td>
+         <td>4</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>282</td>
+         <td>2008-05-11</td>
+         <td>Regional Preferent</td>
+         <td>Mollerussa</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>283</td>
+         <td>2008-05-18</td>
+         <td>Regional Preferent</td>
+         <td>Josep María Gené</td>
+         <td>3</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>284</td>
+         <td>2008-05-25</td>
+         <td>Regional Preferent</td>
+         <td>Pubilla Casas</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>285</td>
+         <td>2008-09-14</td>
+         <td>Regional Preferent</td>
+         <td>Iberiana</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>286</td>
+         <td>2008-09-21</td>
+         <td>Regional Preferent</td>
+         <td>Canyelles</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>287</td>
+         <td>2008-09-28</td>
+         <td>Regional Preferent</td>
+         <td>Guissona</td>
+         <td>2</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>288</td>
+         <td>2008-10-05</td>
+         <td>Regional Preferent</td>
+         <td>Santfeliuenc</td>
+         <td>1</td>
+         <td>3</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>289</td>
+         <td>2008-10-12</td>
+         <td>Regional Preferent</td>
+         <td>Sant Ildefons</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>290</td>
+         <td>2008-10-19</td>
+         <td>Regional Preferent</td>
+         <td>Barceloneta</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>291</td>
+         <td>2008-10-26</td>
+         <td>Regional Preferent</td>
+         <td>El Catllar</td>
+         <td>4</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>292</td>
+         <td>2008-11-02</td>
+         <td>Regional Preferent</td>
+         <td>Sitges</td>
+         <td>2</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>293</td>
+         <td>2008-11-09</td>
+         <td>Regional Preferent</td>
+         <td>Sant Joan Despí</td>
+         <td>2</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>294</td>
+         <td>2008-11-16</td>
+         <td>Regional Preferent</td>
+         <td>Vista Alegre</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>295</td>
+         <td>2008-11-23</td>
+         <td>Regional Preferent</td>
+         <td>Torreforta</td>
+         <td>0</td>
+         <td>4</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>296</td>
+         <td>2008-11-30</td>
+         <td>Regional Preferent</td>
+         <td>Almacelles</td>
+         <td>5</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>297</td>
+         <td>2008-12-07</td>
+         <td>Regional Preferent</td>
+         <td>Alcarràs</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>298</td>
+         <td>2008-12-14</td>
+         <td>Regional Preferent</td>
+         <td>Roquetenc</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>299</td>
+         <td>2008-12-21</td>
+         <td>Regional Preferent</td>
+         <td>Cambrils</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>300</td>
+         <td>2009-01-11</td>
+         <td>Regional Preferent</td>
+         <td>Viladecans</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>301</td>
+         <td>2009-01-18</td>
+         <td>Regional Preferent</td>
+         <td>Horta</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>302</td>
+         <td>2009-01-25</td>
+         <td>Regional Preferent</td>
+         <td>Iberiana</td>
+         <td>3</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>303</td>
+         <td>2009-02-01</td>
+         <td>Regional Preferent</td>
+         <td>Canyelles</td>
+         <td>3</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>304</td>
+         <td>2009-02-08</td>
+         <td>Regional Preferent</td>
+         <td>Guissona</td>
+         <td>4</td>
+         <td>3</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>305</td>
+         <td>2009-02-15</td>
+         <td>Regional Preferent</td>
+         <td>Santfeliuenc</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>306</td>
+         <td>2009-03-01</td>
+         <td>Regional Preferent</td>
+         <td>Sant Ildefons</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>307</td>
+         <td>2009-03-08</td>
+         <td>Regional Preferent</td>
+         <td>Barceloneta</td>
+         <td>3</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>308</td>
+         <td>2009-03-15</td>
+         <td>Regional Preferent</td>
+         <td>El Catllar</td>
+         <td>2</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>309</td>
+         <td>2009-03-22</td>
+         <td>Regional Preferent</td>
+         <td>Sitges</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>310</td>
+         <td>2009-03-29</td>
+         <td>Regional Preferent</td>
+         <td>Sant Joan Despí</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>311</td>
+         <td>2009-04-05</td>
+         <td>Regional Preferent</td>
+         <td>Vista Alegre</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>312</td>
+         <td>2009-04-19</td>
+         <td>Regional Preferent</td>
+         <td>Torreforta</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>313</td>
+         <td>2009-04-26</td>
+         <td>Regional Preferent</td>
+         <td>Almacelles</td>
+         <td>5</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>314</td>
+         <td>2009-05-03</td>
+         <td>Regional Preferent</td>
+         <td>Alcarràs</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>315</td>
+         <td>2009-05-10</td>
+         <td>Regional Preferent</td>
+         <td>Roquetenc</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>316</td>
+         <td>2009-05-17</td>
+         <td>Regional Preferent</td>
+         <td>Cambrils</td>
+         <td>2</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>317</td>
+         <td>2009-05-24</td>
+         <td>Regional Preferent</td>
+         <td>Viladecans</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>318</td>
+         <td>2009-05-31</td>
+         <td>Regional Preferent</td>
+         <td>Horta</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>319</td>
+         <td>2009-09-06</td>
+         <td>Primera Catalana</td>
+         <td>Igualada</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>320</td>
+         <td>2009-09-13</td>
+         <td>Primera Catalana</td>
+         <td>Guíxols</td>
+         <td>1</td>
+         <td>3</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>321</td>
+         <td>2009-09-20</td>
+         <td>Primera Catalana</td>
+         <td>Marianao Poblet</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>322</td>
+         <td>2009-09-27</td>
+         <td>Primera Catalana</td>
+         <td>CF Montañesa</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>323</td>
+         <td>2009-10-04</td>
+         <td>Primera Catalana</td>
+         <td>Montcada</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>324</td>
+         <td>2009-10-11</td>
+         <td>Primera Catalana</td>
+         <td>Mataró</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>325</td>
+         <td>2009-10-18</td>
+         <td>Primera Catalana</td>
+         <td>UE Rubí</td>
+         <td>2</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>326</td>
+         <td>2009-10-25</td>
+         <td>Primera Catalana</td>
+         <td>FC Vilafranca</td>
+         <td>3</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>327</td>
+         <td>2009-11-01</td>
+         <td>Primera Catalana</td>
+         <td>Sanfeliuenc</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>328</td>
+         <td>2009-11-08</td>
+         <td>Primera Catalana</td>
+         <td>Banyoles</td>
+         <td>5</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>329</td>
+         <td>2009-11-15</td>
+         <td>Primera Catalana</td>
+         <td>UE Poble Sec</td>
+         <td>2</td>
+         <td>4</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>330</td>
+         <td>2009-11-22</td>
+         <td>Primera Catalana</td>
+         <td>CF Peralada</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>331</td>
+         <td>2009-11-28</td>
+         <td>Primera Catalana</td>
+         <td>San Cristobal</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>332</td>
+         <td>2009-12-06</td>
+         <td>Primera Catalana</td>
+         <td>Tàrrega</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>333</td>
+         <td>2009-12-13</td>
+         <td>Primera Catalana</td>
+         <td>Vilassar de mar</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>334</td>
+         <td>2009-12-20</td>
+         <td>Primera Catalana</td>
+         <td>Tortosa</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>335</td>
+         <td>2009-12-23</td>
+         <td>Primera Catalana</td>
+         <td>CD Masnou</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>336</td>
+         <td>2010-01-10</td>
+         <td>Primera Catalana</td>
+         <td>Gramanet B</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>337</td>
+         <td>2010-01-17</td>
+         <td>Primera Catalana</td>
+         <td>Gimnástica Iberiana</td>
+         <td>5</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>338</td>
+         <td>2010-01-24</td>
+         <td>Primera Catalana</td>
+         <td>Igualada</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>339</td>
+         <td>2010-01-31</td>
+         <td>Primera Catalana</td>
+         <td>Guíxols</td>
+         <td>1</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>340</td>
+         <td>2010-02-07</td>
+         <td>Primera Catalana</td>
+         <td>Marianao Poblet</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>341</td>
+         <td>2010-02-14</td>
+         <td>Primera Catalana</td>
+         <td>CF Montañesa</td>
+         <td>1</td>
+         <td>3</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>342</td>
+         <td>2010-02-21</td>
+         <td>Primera Catalana</td>
+         <td>Montcada</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>343</td>
+         <td>2010-02-28</td>
+         <td>Primera Catalana</td>
+         <td>Mataró</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>344</td>
+         <td>2010-03-07</td>
+         <td>Primera Catalana</td>
+         <td>UE Rubí</td>
+         <td>3</td>
+         <td>3</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>345</td>
+         <td>2010-03-14</td>
+         <td>Primera Catalana</td>
+         <td>FC Vilafranca</td>
+         <td>0</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>346</td>
+         <td>2010-03-21</td>
+         <td>Primera Catalana</td>
+         <td>Sanfeliuenc</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>347</td>
+         <td>2010-03-28</td>
+         <td>Primera Catalana</td>
+         <td>Banyoles</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>348</td>
+         <td>2010-04-11</td>
+         <td>Primera Catalana</td>
+         <td>UE Poble Sec</td>
+         <td>4</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>349</td>
+         <td>2010-04-18</td>
+         <td>Primera Catalana</td>
+         <td>CF Peralada</td>
+         <td>0</td>
+         <td>0</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>350</td>
+         <td>2010-04-25</td>
+         <td>Primera Catalana</td>
+         <td>CP San Cristobal</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>351</td>
+         <td>2010-05-02</td>
+         <td>Primera Catalana</td>
+         <td>Tàrrega</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>352</td>
+         <td>2010-05-09</td>
+         <td>Primera Catalana</td>
+         <td>Vilassar de mar</td>
+         <td>1</td>
+         <td>1</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>353</td>
+         <td>2010-05-16</td>
+         <td>Primera Catalana</td>
+         <td>Tortosa</td>
+         <td>2</td>
+         <td>1</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>354</td>
+         <td>2010-05-23</td>
+         <td>Primera Catalana</td>
+         <td>CD Masnou</td>
+         <td>2</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+     <tr>
+         <td>355</td>
+         <td>2010-05-30</td>
+         <td>Primera Catalana</td>
+         <td>Gramanet B</td>
+         <td>0</td>
+         <td>2</td>
+         <td>Casa</td>
+     </tr>
+     <tr>
+         <td>356</td>
+         <td>2010-06-06</td>
+         <td>Primera Catalana</td>
+         <td>Gimnástica Iberiana</td>
+         <td>1</td>
+         <td>2</td>
+         <td>Fora</td>
+     </tr>
+   </tbody>
+</table>
+ <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+ <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+ <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+ <script>
+     $(document).ready(function () {
+         $('#example').DataTable();
+     });
+ </script>
+ 
+</html>
